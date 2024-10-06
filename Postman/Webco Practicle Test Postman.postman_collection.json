@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "d1c50c29-9121-4c44-9f89-498e8c7bb64b",
+		"name": "Webco Practicle Test Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "20569137",
+		"_collection_link": "https://cloudy-sunset-690246.postman.co/workspace/Personal-Workspace~a9acce66-3d83-41d1-ad5d-b47f9895c969/collection/20569137-d1c50c29-9121-4c44-9f89-498e8c7bb64b?action=share&source=collection_link&creator=20569137"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Create Customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Daham\",\r\n    \"company\":\"Webco\",\r\n    \"contact_phone\":\"0764218089\",\r\n    \"email\": \"nadeejadaham@gmail.com\",\r\n    \"country\":\"Sri Lanka\",\r\n    \"addresses\": [\r\n        {\r\n            \"number\": \"123\",\r\n            \"street\": \"Panadura\",\r\n            \"state\": \"Kalutara\"\r\n        },\r\n        {\r\n            \"number\": \"1234\",\r\n            \"street\": \"Panadura\",\r\n            \"state\": \"Kalutara\"\r\n        }\r\n    ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/create-customer"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Customer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Nadeeja\",\r\n    \"company\":\"Webco\",\r\n    \"contact_phone\":\"0764218089\",\r\n    \"email\": \"nadeejadaham@gmail.com\",\r\n    \"country\":\"Sri\",\r\n    \"addresses\": [\r\n        {\r\n            \"id\": \"1\",\r\n            \"number\": \"1234\",\r\n            \"street\": \"Panadura\",\r\n            \"state\": \"Kalutara\"\r\n        },\r\n        {\r\n            \"id\": \"2\",\r\n            \"number\": \"5678\",\r\n            \"street\": \"Panadura\",\r\n            \"state\": \"Kalutara\"\r\n        }\r\n    ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/update-customer/3"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Customer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Nadeeja\",\r\n    \"company\":\"Webco\",\r\n    \"contact_phone\":\"0764218089\",\r\n    \"email\": \"nadeejadaham@gmail.com\",\r\n    \"country\":\"Sri\",\r\n    \"addresses\": [\r\n        {\r\n            \"id\": \"1\",\r\n            \"number\": \"1234\",\r\n            \"street\": \"Panadura\",\r\n            \"state\": \"Kalutara\"\r\n        },\r\n        {\r\n            \"id\": \"2\",\r\n            \"number\": \"5678\",\r\n            \"street\": \"Panadura\",\r\n            \"state\": \"Kalutara\"\r\n        }\r\n    ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/delete-customer/4"
+					},
+					"response": []
+				},
+				{
+					"name": "Customer List",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Show Customer",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Projects",
+			"item": [
+				{
+					"name": "Create Project",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Update Project",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": "http://127.0.0.1:8000/api/update-project/3"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Project",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://127.0.0.1:8000/api/delete-project"
+					},
+					"response": []
+				},
+				{
+					"name": "Project List",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Show Project",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
